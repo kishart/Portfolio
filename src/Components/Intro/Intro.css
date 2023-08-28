@@ -49,4 +49,21 @@
 }
 .i-right {
   flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.8);
+  left: -1%;
+  top: -28%;
+  width: 45vw;
+}
+.i-right > :nth-child(2) {
+  transform: scale(1.4);
+  left: 12%;
+  top: -12%;
+  width: 80%;
 }

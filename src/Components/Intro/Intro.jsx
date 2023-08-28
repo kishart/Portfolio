@@ -3,6 +3,13 @@ import "./Intro.css";
 import Github from "../../img/github.png";
 import Gmail from "../../img/gmail-logo.png";
 import Instagram from "../../img/instagram.png";
+import circle from "../../img/circle.png";
+import girl from "../../img/girl.png";
+import thumbup from "../../img/thumbup.png";
+import Programming from "../../img/programming.png";
+import galassesemoji from "../../img/glassesimoji.png";
+import FloatingDiv from "../FloatingDiv/FloatingDiv";
+
 const Intro = () => {
   return (
     <div className="intro">
@@ -22,7 +29,14 @@ const Intro = () => {
           <img src={Instagram} alt="" />
         </div>
       </div>
-      <div className="i-right">i am right side</div>
+
+      <div className="i-right">
+        <img src={circle} alt="" />
+        <img src={girl} alt="" />
+        <div>
+          <FloatingDiv image={Programming} txt1="Web" txt2="Developer" />
+        </div>
+      </div>
     </div>
   );
 };
